@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlanTrack</title>
-    <link rel="icon" href="image/logo.png" type="image/png">
-    <!-- css -->
-     <link rel="stylesheet" href="css/bass.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Calendar</title>
+  <link rel="stylesheet" href="css/bass.css">
 </head>
 <body>
-  
+  <div class="calendar">
+    <!-- Header -->
+    <header class="calendar-header">
+      <button class="prev-button">&lt;</button>
+      <h1 id="current-month">11월</h1>
+      <button class="next-button">&gt;</button>
+    </header>
 
+    <!-- Main Grid -->
+    <main class="calendar-grid" id="calendar-grid">
+      <!-- 요일은 고정 -->
+      <div class="weekday">일</div>
+      <div class="weekday">월</div>
+      <div class="weekday">화</div>
+      <div class="weekday">수</div>
+      <div class="weekday">목</div>
+      <div class="weekday">금</div>
+      <div class="weekday">토</div>
+    </main>
+  </div>
 
-    <!-- javackript -->
-     <script src="js/bass.js"></script>
+  <script src="js/bass.js"></script>
 </body>
 </html>
